@@ -1,3 +1,15 @@
+# AWS
+.aws/
+
+# Artifacts
+artifacts/
+
+# Models
+model/
+
+# Helm values
+helm/values/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
