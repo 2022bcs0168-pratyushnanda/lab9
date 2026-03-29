@@ -2,19 +2,19 @@ backendStore:
   databaseMigration: true
   postgres:
     enabled: true
-    host: "$(RDS_HOST)"
+    host: "$RDS_HOST"
     port: 5432
-    database: "mlflow"
-    user: "$(RDS_USER)"
-    password: "$(RDS_PASSWORD)"
+    database: "mlflow-2022bcs0168"
+    user: "$RDS_USER"
+    password: "$RDS_PASSWORD"
 
 artifactRoot:
   s3:
     enabled: true
-    bucket: "mlops-iiitk"
+    bucket: "mlops-iiitk-2022bcs0168"
 
 extraEnvVars:
-  AWS_ACCESS_KEY_ID: "$(AWS_ACCESS_KEY_ID)"
-  AWS_SECRET_ACCESS_KEY: "$(AWS_SECRET_ACCESS_KEY)"
-  AWS_SESSION_TOKEN: "$(AWS_SESSION_TOKEN)"
-  AWS_DEFAULT_REGION: "$(AWS_DEFAULT_REGION)"
+  AWS_ACCESS_KEY_ID: "$AWS_ACCESS_KEY_ID"
+  AWS_SECRET_ACCESS_KEY: "$AWS_SECRET_ACCESS_KEY"
+  AWS_SESSION_TOKEN: "$AWS_SESSION_TOKEN"
+  AWS_DEFAULT_REGION: "$AWS_DEFAULT_REGION"
